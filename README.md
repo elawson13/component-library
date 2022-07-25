@@ -5,7 +5,7 @@
 ## Getting Start
 - install NVM and install node@16.15.1
 
-```angular2html
+```
 nvm use
 npm i
 npm run sb
