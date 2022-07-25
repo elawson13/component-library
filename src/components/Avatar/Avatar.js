@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import styles from './avatar.module.less'
 
 export const avatarColors = Object.freeze({
+  default: 'default',
   primary: 'primary',
   secondary: 'secondary',
-  default: 'default',
 })
 
 const Avatar = ({ firstName, lastName, color, className }) => {
@@ -26,17 +26,18 @@ const Avatar = ({ firstName, lastName, color, className }) => {
 }
 
 Avatar.defaultProps = {
-  color: avatarColors.primary,
   className: null,
+  color: avatarColors.primary,
   firstName: '',
   lastName: '',
 }
 
 Avatar.propTypes = {
-  color: PropTypes.oneOf([...Object.values(avatarColors)]),
+  className: PropTypes.string,
+  /** [primary, secondary, default] */
+  color: PropTypes.oneOf(Object.values(avatarColors)),
   firstName: PropTypes.string,
   lastName: PropTypes.string,
-  className: PropTypes.string,
 }
 
 export default Avatar
