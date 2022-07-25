@@ -68,7 +68,8 @@
     "lint": "eslint --report-unused-disable-directives --max-warnings 0 -- src/",
     "prepare": "husky install",
     "sb": "start-storybook -p 6006 -s ./public",
-    "test": "jest"
+    "test": "react-scripts test --watchAll=false",
+    "verify": "npm run lint && npm run test"
   },
   "browserslist": {
     "production": [
