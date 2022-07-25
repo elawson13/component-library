@@ -1,4 +1,4 @@
-import { Title, Meta, Story, Canvas, ArgsTable, Stories } from '@storybook/addon-docs'
+import { Title, Meta, Story, Canvas, ArgsTable, Stories, Source } from '@storybook/addon-docs'
 import Avatar, { avatarColors } from '../src/components/Avatar/Avatar'
 
 <Meta
@@ -45,7 +45,7 @@ avatarColors = {
       lastName: 'last name',
     }}
   >
-    {(args) => <Avatar {...args} />}
+    {Template.bind({})}
   </Story>
   <Story
     name="Secondary"
