@@ -12,3 +12,11 @@ export const decorators = [
     </StyledEngineProvider>
   ),
 ]
+
+export const parameters = {
+  options: {
+    storySort: {
+      order: ['Introduction', 'Design System', 'Typography', 'Components'],
+    },
+  },
+}

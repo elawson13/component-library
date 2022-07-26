@@ -1,0 +1,78 @@
+import { Title, Meta, Story, Canvas, ArgsTable, Stories, Source } from '@storybook/addon-docs'
+import Avatar, { avatarColors } from '../src/components/Avatar/Avatar'
+
+<Meta
+  title="MDX/Avatar"
+  component={Avatar}
+  argTypes={{
+    firstName: '',
+    lastName: '',
+    color: {
+      options: [avatarColors.primary, avatarColors.secondary, avatarColors.default],
+    },
+    className: '',
+  }}
+/>
+
+export const Template = (args) => <Avatar {...args} />
+
+<Title />
+
+Avatar is used to display the user initial
+
+This component also export a set of color
+
+```javascript
+avatarColors = {
+  default: 'default',
+  primary: 'primary',
+  secondary: 'secondary',
+}
+```
+
+```javascript
+<Avatar color={avatarColors.primary} firstName='name' lastName='last'>
+```
+
+## Variants
+
+<Canvas>
+  <Story
+    name="Primary"
+    args={{
+      color: avatarColors.primary,
+      firstName: 'test name',
+      lastName: 'last name',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Secondary"
+    args={{
+      color: avatarColors.secondary,
+      firstName: 'first name',
+      lastName: 'last name',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Default"
+    args={{
+      color: avatarColors.default,
+      firstName: 'first name',
+      lastName: 'last name',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Primary: {add description on usage}
+
+Secondary: {add description on usage}
+
+Default: {add description on usage}
+
+<ArgsTable />
