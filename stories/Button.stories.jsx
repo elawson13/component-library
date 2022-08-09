@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import Button, { buttonColors, buttonSizes, buttonTypes } from '../src/components/Button/Button'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -25,6 +26,7 @@ export default {
       options: [buttonTypes.filled, buttonTypes.outlined, buttonTypes.text, buttonTypes.link],
     },
   },
+  decorators: [withDesign],
 }
 
 export const ButtonComponent = (args) => <Button {...args} />
@@ -38,4 +40,12 @@ ButtonComponent.args = {
   fullWidth: false,
   size: buttonSizes.default,
   buttonType: buttonTypes.filled,
+}
+
+ButtonComponent.parameters = {
+  design: {
+    type: 'figspec',
+    url: 'https://www.figma.com/file/abUScvLLDOkkSx7JqAcYwv/Test-file-for-CL-082022?node-id=5%3A10',
+    accessToken: 'figd_gQQlF33ZUQHW1Khoqp2VYPcsjFUxc4ZZxWwhhymt',
+  },
 }

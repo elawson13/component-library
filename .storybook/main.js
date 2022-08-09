@@ -8,6 +8,13 @@ module.exports = {
     '@storybook/addon-interactions',
     '@storybook/addon-controls',
     'storybook-addon-material-ui',
+    'storybook-addon-designs',
+    /* {
+      name: 'storybook-addon-designs',
+      options: {
+        renderTarget: 'tab',
+      },
+    }, */
   ],
   framework: '@storybook/react',
   core: {

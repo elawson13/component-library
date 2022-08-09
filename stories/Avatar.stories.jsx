@@ -1,5 +1,7 @@
+import { withDesign } from 'storybook-addon-designs'
 import { Divider } from '../src/components'
 import Avatar, { avatarColors } from '../src/components/Avatar/Avatar'
+import { ButtonComponent } from './Button.stories'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Components/Avatar',
@@ -12,6 +14,7 @@ export default {
     },
     className: '',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types
@@ -34,4 +37,11 @@ AvatarComponent.args = {
   lastName: '',
   color: avatarColors.primary,
   className: '',
+}
+
+AvatarComponent.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/abUScvLLDOkkSx7JqAcYwv/Test-file-for-CL-082022?node-id=5%3A10',
+  },
 }
