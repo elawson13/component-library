@@ -32,6 +32,6 @@ export const AvatarComponent = (args) => {
 AvatarComponent.args = {
   firstName: '',
   lastName: '',
-  color: avatarColors.primary,
+  color: avatarColors.secondary,
   className: '',
 }

@@ -34,6 +34,7 @@
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "14.2.0",
     "babel-loader": "8.2.5",
+    "chromatic": "^6.7.3",
     "commitizen": "^4.2.5",
     "css-loader": "^6.2.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -69,7 +70,8 @@
     "prepare": "husky install",
     "sb": "start-storybook -p 6006 -s ./public",
     "test": "react-scripts test --watchAll=false",
-    "verify": "npm run lint && npm run test"
+    "verify": "npm run lint && npm run test",
+    "chromatic": "npx chromatic --project-token=8dae2e3e12ec"
   },
   "browserslist": {
     "production": [
@@ -87,5 +89,7 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@csr/component-library@0.1.0"
 }
