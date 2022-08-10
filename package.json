@@ -64,7 +64,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "build-storybook": "build-storybook -o docs-build",
+    "build-storybook": "build-storybook -s public",
     "cm": "cz",
     "lint": "eslint --report-unused-disable-directives --max-warnings 0 -- src/",
     "prepare": "husky install",
