@@ -71,7 +71,7 @@
     "sb": "start-storybook -p 6006 -s ./public",
     "test": "react-scripts test --watchAll=false",
     "verify": "npm run lint && npm run test",
-    "chromatic": "npx chromatic --project-token=8dae2e3e12ec"
+    "chromatic": "chromatic --project-token=8dae2e3e12ec"
   },
   "browserslist": {
     "production": [
