@@ -33,3 +33,9 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run chromatic``
+
+Runs chromatic CLI to run UI tests and verify UI changes.
+
+See this guide about [chromatic](https://submittable.atlassian.net/wiki/spaces/EN/pages/933134350/Guide+Chromatic+Workflow)
