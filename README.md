@@ -1,6 +1,6 @@
 
 ## Live Storybook
-[Storybook](https://submittable.github.io/component-library/?path=/docs/components-avatar--avatar-component)
+[Storybook](https://main--62f2ac6440da3214a498dc36.chromatic.com/)
 
 ## Getting Start
 - install NVM and install node@16.15.1
