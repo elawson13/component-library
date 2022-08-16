@@ -31,3 +31,6 @@ npm-debug.log*
 !.vscode/settings.json
 
 .idea/*
+
+# storybook
+build-storybook.log
