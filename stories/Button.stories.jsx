@@ -32,7 +32,7 @@ export const ButtonComponent = (args) => <Button {...args} />
 ButtonComponent.args = {
   type: 'Button',
   color: buttonColors.primary,
-  buttonText: 'Button',
+  buttonText: 'Continue',
   isDisabled: false,
   isLoading: false,
   fullWidth: false,
