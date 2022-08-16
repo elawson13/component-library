@@ -33,4 +33,4 @@ npm-debug.log*
 .idea/*
 
 # storybook
-.build-storybook.log
+build-storybook.log
