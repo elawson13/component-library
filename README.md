@@ -1,6 +1,9 @@
 ## Live Storybook
 
 [Storybook](https://main--62f2ac6440da3214a498dc36.chromatic.com/)
+
+## Live Chromatic
+
 [Chromatic](https://www.chromatic.com/builds?appId=62f2ac6440da3214a498dc36&inviteToken=ec27690871864df3936b71f869e4c9df)
 
 ## Getting Start
