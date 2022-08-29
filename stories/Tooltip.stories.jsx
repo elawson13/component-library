@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import Tooltip, { placementOptions } from '../src/components/Tooltip/Tooltip'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -11,6 +12,7 @@ export default {
     },
     title: '',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

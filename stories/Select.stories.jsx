@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import Select from '../src/components/_forms/Select/Select'
 
@@ -18,6 +19,7 @@ export default {
     eventLabel: '',
     eventContext: {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

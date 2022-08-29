@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import DateInput from '../src/components/_forms/DateInput/DateInput'
 
@@ -18,6 +19,7 @@ export default {
     fullWidth: [true, false],
     inputRef: () => {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

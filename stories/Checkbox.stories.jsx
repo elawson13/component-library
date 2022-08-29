@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import Checkbox from '../src/components/_forms/Checkbox/Checkbox'
 
@@ -12,6 +13,7 @@ export default {
     labelText: 'Checkbox Label',
     onChange: () => {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import Switch from '../src/components/_forms/Switch/Switch'
 
@@ -12,6 +13,7 @@ export default {
     label: 'Switch Label',
     onChange: () => {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

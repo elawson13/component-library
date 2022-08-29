@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import Banner, { bannerTypes } from '../src/components/Banner/Banner'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -18,6 +19,7 @@ export default {
     children: '',
     className: '',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

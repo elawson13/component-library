@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import TabbedContent from '../src/components/TabbedContent/TabbedContent'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -10,6 +11,7 @@ export default {
     isSmallTabs: [true, false],
     isVertical: [true, false],
   },
+  decorators: [withDesign],
 }
 
 export const TabbedContentComponent = (args) => <TabbedContent {...args} />

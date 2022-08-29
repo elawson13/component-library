@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import LoadingSpinner from '../src/components/LoadingSpinner/LoadingSpinner'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -7,6 +8,7 @@ export default {
   argTypes: {
     size: 50,
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

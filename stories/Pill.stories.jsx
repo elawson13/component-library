@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import Pill, { pillColors, pillSizes, pillTypes } from '../src/components/Pill/Pill'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -17,6 +18,7 @@ export default {
     },
     className: '',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

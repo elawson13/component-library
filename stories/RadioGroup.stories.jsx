@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import RadioGroup from '../src/components/_forms/RadioGroup/RadioGroup'
 import RadioOption from '../src/components/_forms/RadioOption/RadioOption'
@@ -12,6 +13,7 @@ export default {
     onChange: () => {},
     children: '',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

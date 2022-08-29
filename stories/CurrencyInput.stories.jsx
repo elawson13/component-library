@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import CurrencyInput, { currencyTypes } from '../src/components/_forms/CurrencyInput/CurrencyInput'
 
@@ -12,6 +13,7 @@ export default {
     onChange: () => {},
     onBlur: () => {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

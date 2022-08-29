@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import EllipsisMenu from '../src/components/EllipsisMenu/EllipsisMenu'
 import MenuItem from '../src/components/MenuItem/MenuItem'
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -10,6 +11,7 @@ export default {
     eventContext: {},
     children: '',
   },
+  decorators: [withDesign],
 }
 
 export const EllipsisMenuComponent = (args) => {

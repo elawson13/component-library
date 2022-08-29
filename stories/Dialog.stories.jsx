@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import Button, { buttonTypes } from '../src/components/Button/Button'
 import Dialog from '../src/components/Dialog/Dialog'
@@ -21,6 +22,7 @@ export default {
     shouldHideAllButtons: [true, false],
     isFullScreen: [true, false],
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

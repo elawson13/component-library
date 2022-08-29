@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import TimeInput from '../src/components/_forms/TimeInput/TimeInput'
 
@@ -15,6 +16,7 @@ export default {
     isDisabled: [true, false],
     fullWidth: [true, false],
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

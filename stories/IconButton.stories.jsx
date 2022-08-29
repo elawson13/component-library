@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { Delete } from '@mui/icons-material'
 import IconButton from '../src/components/IconButton/IconButton'
 
@@ -17,6 +18,7 @@ export default {
     ariaHaspopup: '',
     ariaExpanded: [false, true],
   },
+  decorators: [withDesign],
 }
 
 export const IconButtonComponent = (args) => <IconButton {...args} />

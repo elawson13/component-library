@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import PaginationBar from '../src/components/PaginationBar/PaginationBar'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -10,6 +11,7 @@ export default {
     onChange: () => {},
     shouldHideIfOnePage: [true, false],
   },
+  decorators: [withDesign],
 }
 
 export const PaginationBarComponent = (args) => <PaginationBar {...args} />

@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import { useRef } from 'react'
 import MenuItem from '../src/components/MenuItem/MenuItem'
@@ -22,6 +23,7 @@ export default {
     ariaLabelledby: '',
     id: '',
   },
+  decorators: [withDesign],
 }
 
 export const PopoverMenuComponent = (args) => {

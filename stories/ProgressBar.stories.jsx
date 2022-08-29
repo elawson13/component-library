@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import ProgressBar from '../src/components/ProgressBar/ProgressBar'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -12,6 +13,7 @@ export default {
     shouldHideAnnotations: [true, false],
     className: '',
   },
+  decorators: [withDesign],
 }
 
 export const ProgressBarComponent = (args) => <ProgressBar {...args} />

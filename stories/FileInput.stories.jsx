@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import FileInput from '../src/components/_forms/FileInput/FileInput'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -10,6 +11,7 @@ export default {
     onChange: () => {},
     onBlur: () => {},
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

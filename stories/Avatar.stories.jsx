@@ -1,7 +1,6 @@
 import { withDesign } from 'storybook-addon-designs'
 import { Divider } from '../src/components'
 import Avatar, { avatarColors } from '../src/components/Avatar/Avatar'
-import { ButtonComponent } from './Button.stories'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Components/Avatar',

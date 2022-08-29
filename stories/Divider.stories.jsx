@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import Divider from '../src/components/Divider/Divider'
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -5,6 +6,7 @@ export default {
   title: 'Components/Divider',
   component: Divider,
   argTypes: {},
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { StepConnector } from '@mui/material'
 import Stepper from '../src/components/Stepper/Stepper'
 
@@ -16,6 +17,7 @@ export default {
     hideStepsComplete: [true, false],
     isVerticalStepper: [true, false],
   },
+  decorators: [withDesign],
 }
 
 export const StepperComponent = (args) => {

@@ -41,11 +41,3 @@ ButtonComponent.args = {
   size: buttonSizes.default,
   buttonType: buttonTypes.filled,
 }
-
-ButtonComponent.parameters = {
-  design: {
-    type: 'figspec',
-    url: 'https://www.figma.com/file/abUScvLLDOkkSx7JqAcYwv/Test-file-for-CL-082022?node-id=5%3A10',
-    accessToken: 'figd_gQQlF33ZUQHW1Khoqp2VYPcsjFUxc4ZZxWwhhymt',
-  },
-}

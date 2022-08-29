@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs'
 import { useArgs } from '@storybook/client-api'
 import TextInput from '../src/components/_forms/TextInput/TextInput'
 
@@ -19,6 +20,7 @@ export default {
     rows: 0,
     placeholder: 'Text Input',
   },
+  decorators: [withDesign],
 }
 
 // eslint-disable-next-line react/prop-types

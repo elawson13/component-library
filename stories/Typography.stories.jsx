@@ -1,9 +1,11 @@
+import { withDesign } from 'storybook-addon-designs'
 import { Paragraph, paragraphTypes } from '../src/components'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Components/Typography',
   component: null,
+  decorators: [withDesign],
 }
 
 export const TypographyComponent = () => {
